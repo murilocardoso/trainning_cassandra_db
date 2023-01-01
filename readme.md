@@ -136,7 +136,7 @@ Semelhante a escrita, é possível configurar de quantos nodes a informação de
 
 Diferença entre replication factor e write e read consistency.
 
-Write e read consistency diz respeito a quantos nodes devem ser escritos ou lidos para considerar que uma operação obteve sucesso. Vamos supor que replication factor seja 3 e o write e read consistency seja 1, ao realizar uma escrita e logo em seguida uma leitura, pode ser que não tenha dado tempo da replicar ocorrer ao node em que está sendo feita a consulta, por este motivo não se teria um consistencia forte, apenas uma consistência eventual.
+Write e read consistency dizem respeito a quantos nodes devem ser escritos ou lidos para considerar que uma operação obteve sucesso. Vamos supor que replication factor seja 3 e o write e read consistency seja 1, ao realizar uma escrita e logo em seguida uma leitura, pode ser que não tenha dado tempo da replicação ocorrer para o node em que está sendo feita a consulta, por este motivo não se teria um consistencia forte, apenas uma consistência eventual.
 
 Para os cenários de multi datacenter, é possível definir estratégias específicas como por exemplo LOCAL_ONE, LOCAL_QUORUM ou EACH_QUORUM.
 
